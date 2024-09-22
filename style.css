@@ -1,0 +1,75 @@
+
+
+body{
+    background-color: #e0ffcd; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200fr);
+    gap:10px;
+}
+.title{
+    display: grid;
+    background-color: #baa8ef72; 
+    grid-template-columns:repeat(4, 1fr);;
+    grid-column: 1/5;
+
+}
+
+h1{
+    
+    grid-column: 2/4;
+    margin-left: 30%;
+    font-size: xxx-large;
+    text-decoration: underline;
+    color: rgb(29, 29, 114);
+}
+
+#player1{
+    grid-column: 2/3 ;
+    grid-row:2/3 ;
+}
+#player2{
+    grid-column: 3/4 ;
+    grid-row:2/3 ;
+}
+#player1, #player2{
+    padding-left: 40%;
+}
+
+#Gameboard{
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width:  450px;
+    height: 450px;
+    grid-column: 2/5;
+    grid-row: 2/4;
+}
+
+.cell{
+    border: solid, black;
+    background-color:#ffcab0; 
+    font-size: xxx-large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#restart{
+    grid-column: 3/4;
+    grid-row: 4/5;
+   margin-top: -90px;
+}
+
+.restartBtn{
+    border-radius: 5px;
+    background-color: #ffebbb; 
+    color: rgba(5, 69, 10, 0.909);
+    width: 80px;
+    height: 35px;
+    
+   
+}
+.restartBtn:hover{
+    background-color: #fed066; 
+}
